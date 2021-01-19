@@ -43,7 +43,6 @@ export default {
 	plugins: [
 		svelte({
 			preprocess: {
-				...sveltePreprocess(),
 				...image({
 					publicDir: "./public/",
 					placeholder: "trace",
@@ -57,7 +56,8 @@ export default {
 						color: "#000",
 						threshold: 120
 					}
-				})
+				}),
+				...sveltePreprocess()
 			},
 			compilerOptions: {
 				// enable run-time checks when not in production

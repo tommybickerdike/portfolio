@@ -3,10 +3,14 @@
 </script>
 
 <main>
-	<div class="image">
-		<Image src="/tommy-bickerdike.png" />
+	<div class="main-content">
+		<div class="image">
+			<div class="image-process">
+				<Image src="/tommy-bickerdike.png" />
+			</div>
+		</div>
+		<h1>Machine &amp; Oil is the product design portfolio of <span>Tommy Bickerdike</span></h1>
 	</div>
-	<h1>Machine &amp; Oil is the product design portfolio of <span>Tommy Bickerdike</span></h1>
 </main>
 
 <style>
@@ -43,13 +47,19 @@
 		position: fixed;
 		top: 0;
 		right: 0;
-		height: 600px;
+		height: 100vh;
 		width: 500px;
-		max-width: 100%;
+		max-width: 80%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
 		z-index: 1;
-		mix-blend-mode: multiply;
+		background: #262C57;
 	}
 
+	.image-process {
+		mix-blend-mode: multiply;
+	}
 	@media (max-width: 65ch) {
 		main {
 			padding: 1rem;
