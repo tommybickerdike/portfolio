@@ -6,6 +6,8 @@ import { terser } from 'rollup-plugin-terser';
 import sveltePreprocess from 'svelte-preprocess';
 import typescript from '@rollup/plugin-typescript';
 import css from 'rollup-plugin-css-only';
+import image from "svelte-image";
+
 
 const production = !process.env.ROLLUP_WATCH;
 
@@ -40,7 +42,23 @@ export default {
 	},
 	plugins: [
 		svelte({
-			preprocess: sveltePreprocess(),
+			preprocess: {
+				...sveltePreprocess(),
+				...image({
+					publicDir: "./public/",
+					placeholder: "trace",
+					webpOptions: {
+						quality: 75,
+						lossless: true,
+						force: false
+					},
+					trace: {
+						background: "#fff",
+						color: "#000",
+						threshold: 120
+					}
+				})
+			},
 			compilerOptions: {
 				// enable run-time checks when not in production
 				dev: !production
