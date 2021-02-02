@@ -43,6 +43,9 @@ export default {
 			preprocess: {
 				...image({
 					publicDir: "./public/",
+					sizes: [200, 600, 1200],
+  				breakpoints: [375, 768, 1024],
+  				outputDir: "g/",
 					placeholder: "trace",
 					webpOptions: {
 						quality: 75,

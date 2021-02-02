@@ -2,11 +2,9 @@
 	import Image from "svelte-image";
 </script>
 
-
-
 <div class="image">
 	<div class="image-process">
-		<Image src="/tommy-bickerdike.png" />
+		<Image src="/tommy-bickerdike.png" alt="Tommy Bickerdike"/>
 	</div>
 </div>
 <h1>Machine &amp; Oil is the product design portfolio of <span>Tommy Bickerdike</span></h1>
