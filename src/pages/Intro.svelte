@@ -4,7 +4,7 @@
 
 <div class="image">
 	<div class="image-process">
-		<Image src="/tommy-bickerdike.png" alt="Tommy Bickerdike"/>
+		<Image src="/tommy-bickerdike.png" alt="Tommy Bickerdike" width="1500" height="1500" sizes="(max-width: 600px) 80vw, 500px"/>
 	</div>
 </div>
 <h1>Machine &amp; Oil is the product design portfolio of <span>Tommy Bickerdike</span></h1>

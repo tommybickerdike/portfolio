@@ -17,6 +17,13 @@
 		<Route path="work" component="{Work}" /> 
 	</main>
 	<footer>
-		Hello
+		Built with Svelte <a href="https://github.com/tommybickerdike/portfolio" target="_blank">view source</a>.
 	</footer>
 </Router>
+
+
+<style>
+	footer {
+		font-size: 0.8rem;
+	}
+</style>

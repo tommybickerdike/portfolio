@@ -41,10 +41,11 @@ export default {
 	plugins: [
 		svelte({
 			preprocess: {
+				...sveltePreprocess(),
 				...image({
 					publicDir: "./public/",
-					sizes: [200, 600, 1200],
-  				breakpoints: [375, 768, 1024],
+					sizes: [500, 750, 1000, 1250, 1500],
+  				breakpoints: [500, 750, 1000, 1250, 1500],
   				outputDir: "g/",
 					placeholder: "trace",
 					webpOptions: {
@@ -53,12 +54,11 @@ export default {
 						force: false
 					},
 					trace: {
-						background: "#fff",
-						color: "#000",
-						threshold: 120
+						background: "#eee",
+						color: "#444",
+						threshold: 130
 					}
-				}),
-				...sveltePreprocess()
+				})
 			},
 			compilerOptions: {
 				hydratable: true,
