@@ -1,7 +1,7 @@
 :root {
 	--background-color: #262C57;
 	--text-color: #FFADBB;
-	--link-color: rgb(255,255,255,.2);
+	--link-color: rgb(255,255,255,.3);
 	--page-border: 2rem;
 }
 
@@ -50,6 +50,12 @@ header {
 	padding: var(--page-border) 0;
 }
 
+nav a {
+	font-weight: bold;
+	display: inline-block;
+	margin-right: .5rem;
+}
+
 footer {
 	padding: var(--page-border) 0;
 	font-size: 0.8rem;
@@ -70,6 +76,11 @@ a:hover {
 	text-decoration: none;
 	background-size: 100% 5px;
 	background-position: 0% 100%;
+}
+
+a:active,
+a[aria-current] {
+	background-position: 0% 0%;
 }
 
 img {

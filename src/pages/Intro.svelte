@@ -1,20 +1,29 @@
 <script lang="ts">
 	import Image from "svelte-image";
+	import { fly } from "svelte/transition";
 </script>
 
+<svelte:head>
+  <title>Tommy Bickerdike - Work</title>
+</svelte:head>
+
+<section in:fly={{ y: 50, duration: 500 }} out:fly={{ y: 50, duration: 500 }}>
+	<h1>Machine &amp; Oil is the product design portfolio of <span>Tommy Bickerdike</span></h1>
+</section>
 <div class="image">
 	<div class="image-process">
 		<Image src="/tommy-bickerdike.png" alt="Tommy Bickerdike" width="1500" height="1500" sizes="(max-width: 600px) 80vw, 500px"/>
 	</div>
 </div>
-<h1>Machine &amp; Oil is the product design portfolio of <span>Tommy Bickerdike</span></h1>
 
 
 <style>
+	section {
+		z-index: 2;
+	}
 	h1 {
 		font-weight: inherit;
 		position: relative;
-		z-index: 2;
 	}
 	h1 span {
 		display: block;
