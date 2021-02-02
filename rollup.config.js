@@ -49,12 +49,12 @@ export default {
   				outputDir: "g/",
 					placeholder: "trace",
 					webpOptions: {
-						quality: 75,
-						lossless: true,
+						quality: 50,
+						lossless: false,
 						force: false
 					},
 					trace: {
-						background: "#eee",
+						background: "#ddd",
 						color: "#444",
 						threshold: 130
 					}
