@@ -47,7 +47,8 @@ export default {
 					sizes: [500, 750, 1000, 1250, 1500],
   				breakpoints: [500, 750, 1000, 1250, 1500],
   				outputDir: "g/",
-					placeholder: "trace",
+					compressionLevel: 6,
+					quality: 50,
 					webpOptions: {
 						quality: 50,
 						lossless: false,

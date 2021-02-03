@@ -1,7 +1,7 @@
 :root {
 	--background-color: #262C57;
 	--text-color: #FFADBB;
-	--link-color: rgb(255,255,255,.2);
+	--link-color: #FFFFFF44;
 	--page-border: 2rem;
 }
 
@@ -35,11 +35,10 @@ main {
 	width: 100%;
 	flex-grow: 1;
 	z-index: 1;
-	display: flex;
-	position: relative;
-	flex-direction: column;
-	justify-content: center;
-	align-items: flex-start;
+	display: grid;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
 }
 
 header {
@@ -50,10 +49,27 @@ header {
 	padding: var(--page-border) 0;
 }
 
+nav a {
+	font-weight: bold;
+	display: inline-block;
+	margin-right: .5rem;
+}
+
 footer {
 	padding: var(--page-border) 0;
 	font-size: 0.8rem;
 	z-index: 1;
+}
+
+section {
+	grid-column: 1/2;
+	grid-row: 1/2;
+	z-index: 2;
+	overflow: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
 }
 
 a {
@@ -70,6 +86,12 @@ a:hover {
 	text-decoration: none;
 	background-size: 100% 5px;
 	background-position: 0% 100%;
+}
+
+a:active,
+a[aria-current] {
+	background-position: 0% 50%;
+	background-size: 100% 1rem;
 }
 
 img {
