@@ -1,4 +1,5 @@
 <script>
+  import Image from "svelte-image";
   import { fly } from "svelte/transition";
 </script>
 
@@ -11,12 +12,54 @@
     <h2>Music Ecommerce</h2>
     <p>Artist websites designed & built on the Music Glue platform.</p>
     <p>
-      <a href="https://www.musicglue.com/ac-dc/">AC/DC</a><br>
-      <a href="https://www.entershikari.com">Enter Shikari</a><br>
-      <a href="https://merch.georgeezra.com">George Ezra</a><br>
-      <a href="https://www.jacksavoretti.com">Jack Savoretti</a><br>
-      <a href="https://store.ledzeppelin.com">Led Zeppelin</a><br>
-      <a href="https://www.motorhead79.com">Motörhead</a>
+      <a href="https://www.musicglue.com/ac-dc/">
+        AC/DC
+        <div class="image">
+          <div class="image-process">
+            <Image src="images/ac-dc.jpg" alt="AC/DC Website" width="1500" height="1500" sizes="(max-width: 600px) 80vw, 600px" threshold="0.8"/>
+          </div>
+        </div>
+      </a><br>
+      <a href="https://www.entershikari.com">
+        Enter Shikari
+        <div class="image">
+          <div class="image-process">
+            <Image src="images/enter-shikari.jpg" alt="Enter Shikari Website" width="1500" height="1500" sizes="(max-width: 600px) 80vw, 600px" threshold="0.8"/>
+          </div>
+        </div>
+      </a><br>
+      <a href="https://merch.georgeezra.com">
+        George Ezra
+        <div class="image">
+          <div class="image-process">
+            <Image src="images/george-ezra.jpg" alt="George Ezra Website" width="1500" height="1500" sizes="(max-width: 600px) 80vw, 600px" threshold="0.8"/>
+          </div>
+        </div>
+      </a><br>
+      <a href="https://www.jacksavoretti.com">
+        Jack Savoretti
+        <div class="image">
+          <div class="image-process">
+            <Image src="images/jack-savoretti.jpg" alt="Jack Savoretti Website" width="1500" height="1500" sizes="(max-width: 600px) 80vw, 600px" threshold="0.8"/>
+          </div>
+        </div>
+      </a><br>
+      <a href="https://store.ledzeppelin.com">
+        Led Zeppelin
+        <div class="image">
+          <div class="image-process">
+            <Image src="images/led-zeppelin.jpg" alt="Led Zeppelin Website" width="1500" height="1500" sizes="(max-width: 600px) 80vw, 600px" threshold="0.8"/>
+          </div>
+        </div>
+      </a><br>
+      <a href="https://www.motorhead79.com">
+        Motörhead
+        <div class="image">
+          <div class="image-process">
+            <Image src="images/motorhead.jpg" alt="Motörhead Website" width="1500" height="1500" sizes="(max-width: 600px) 80vw, 600px" threshold="0.8"/>
+          </div>
+        </div>
+      </a>
     </p>
   </div>
   <div>
@@ -38,6 +81,9 @@
 
 
 <style>
+  section {
+    z-index: 2;
+  }
   h2 {
     font-size: 2rem;
     margin: 0 0 1rem;
@@ -54,5 +100,31 @@
 
   div {
     margin: 2rem 0 4rem;
+  }
+
+  .image {
+		position: fixed;
+    pointer-events: none;
+    transform: translate3d(-100%, 0, 1px);
+		top: 0;
+    opacity: 0;
+    padding-top: 2rem;
+		right: 0;
+		height: 100vh;
+		width: 600px;
+		max-width: 80%;
+		z-index: -1;
+		background: #262C57;
+    transition: .3s opacity, .5s transform;
+	}
+
+	.image-process {
+		mix-blend-mode: multiply;
+    opacity: .5;
+	}
+
+  a:hover .image {
+    opacity: 1;
+    transform: translate3d(0, 0, 1px);
   }
 </style>

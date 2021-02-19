@@ -14,7 +14,7 @@
 </section>
 <div class="image" in:fade={{ duration: 2000 }} out:fly={{ x: 100, duration: 300 }}>
 	<div class="image-process">
-		<Image src="/tommy-bickerdike.png" alt="Tommy Bickerdike" width="1500" height="1500" sizes="(max-width: 600px) 80vw, 500px" threshold="0.8"/>
+		<Image src="images/tommy-bickerdike.jpg" alt="Tommy Bickerdike" width="1500" height="1500" sizes="(max-width: 600px) 80vw, 500px" threshold="0.8"/>
 	</div>
 </div>
 
