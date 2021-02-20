@@ -11,14 +11,12 @@
 	box-sizing: border-box;
 }
 
-html {
+html, body {
 	padding: 0;
 	margin: 0;
 }
 
 body {
-	margin: 0;
-	padding: 0 var(--page-border);
 	font-family: transat, sans-serif;
 	font-weight: 400;
 	font-style: normal;
@@ -43,6 +41,7 @@ main {
 	width: 100%;
 	flex-grow: 1;
 	z-index: 1;
+	padding: var(--page-border);
 	display: grid;
 	width: 100%;
 	height: 100%;
@@ -54,7 +53,7 @@ header {
 	top: 0;
 	z-index: 2;
 	width: 100%;
-	padding: var(--page-border) 0;
+	padding: var(--page-border);
 	background: var(--nav-background-color);
 }
 
@@ -66,9 +65,8 @@ nav a {
 }
 
 footer {
-	padding: var(--page-border) 0;
-	border-top: 1px solid var(--footer-border);
-	font-size: 0.8rem;
+	padding: var(--page-border);
+	font-size: 0.75rem;
 	z-index: 1;
 }
 
@@ -78,10 +76,6 @@ section {
 	z-index: 2;
 	overflow: auto;
 	min-height: 100%;
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	justify-content: center;
 }
 
 a {
@@ -106,10 +100,24 @@ a[aria-current] {
 	background-size: 100% 1rem;
 }
 
-img {
-	max-width: 100%;
-	display: block;
-	height: auto;
+a[target="_blank"] {
+	position: relative;
+}
+
+a[target="_blank"]::after {
+	content: "↗";
+	color: var(--link-color);
+	font-size: .5em;
+	width: .5em;
+	height: .5em;
+	border: 1px solid currentColor;
+	display: inline-block;
+	vertical-align: bottom;
+	line-height: 0;
+	margin: 0 0 1em .5em;
+	position: absolute;
+	right: -1em;
+	bottom: -1em;
 }
 
 @media (max-width: 1000px) {
@@ -119,11 +127,33 @@ img {
 }
 
 @media (max-width: 700px) {
-	body {
-		padding: 0 1rem;
+	header, main, footer {
+		padding: 1rem;
 	}
+}
 
-	header, footer {
-		padding: 1rem 0;
-	}
+.image {
+	position: fixed;
+	top: 5.5rem;
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-end;
+	right: 0;
+	margin: 0;
+	padding: 0;
+	width: 600px;
+	height: 100vh;
+	overflow: hidden;
+	max-width: 80%;
+	z-index: -1;
+	background: #262C57;
+}
+
+.image-wrap {
+	position: absolute;
+	mix-blend-mode: multiply;
+	opacity: .5;
+	object-fit: contain; 
+	max-width: 100%;
+	max-height: 100%;
 }

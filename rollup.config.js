@@ -44,10 +44,10 @@ export default {
 				...sveltePreprocess(),
 				...image({
 					publicDir: "./public/",
-					sizes: [500, 750, 1000, 1250, 1500],
-  				breakpoints: [500, 750, 1000, 1250, 1500],
+					sizes: [600, 750, 900, 1050, 1200],
+  				breakpoints: [600, 750, 900, 1050, 1200],
   				outputDir: "g/",
-					compressionLevel: 6,
+					compressionLevel: 5,
 					quality: 50,
 					webpOptions: {
 						quality: 50,
