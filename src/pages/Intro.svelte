@@ -9,11 +9,11 @@
 
 <section in:fly={{ y: 50, duration: 500 }} out:fly={{ y: 50, duration: 300 }}>
 	<h1>Tommy Bickerdike</h1>
-	<p>A product designer and creative technologist currently 
-		making e-commerce websites as Creative Director of Music Glue.</p>
+	<p>A senior UX designer and front end developer<br> 
+		currently working in e-commerece at Music Glue.</p>
 </section>
-<div class="image" in:fade={{ duration: 2000 }} out:fly={{ x: 100, duration: 300 }}>
-	<Image wrapperClass="image-wrap" src="images/tommy-bickerdike.jpg" alt="Tommy Bickerdike" width="600" sizes="(max-width: 600px) 80vw, 500px" threshold="0.8"/>
+<div class="backing-image" in:fade={{ duration: 2000 }} out:fly={{ x: 100, duration: 300 }}>
+	<Image src="images/tommy-bickerdike.jpg" alt="Tommy Bickerdike" width="600" sizes="(max-width: 600px) 80vw, 500px" threshold="0.8"/>
 </div>
 
 <style>
@@ -25,7 +25,7 @@
 		padding-top: 10vh;
 		line-height: 1.1;
 		font-weight: 700;
-		margin: 0;
+		margin: 0 0 1rem;
 	}
 
 	p {
@@ -34,9 +34,13 @@
 		max-width: 100%;
 	}
 
-	@media (max-width: 65ch) {
+	@media (max-width: 700px) {
 		h1 {
 			font-size: 4rem;
+		}
+
+		.backing-image {
+			align-items: flex-end;
 		}
 	}
 </style>

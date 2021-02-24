@@ -3,10 +3,12 @@
 	--primary-color: #252b57;
 	--link-color: #ff572270;
 	--page-border: 2rem;
+	--contain-width: 1000px;
 }
 
 * {
 	box-sizing: border-box;
+	max-width: 100%;
 }
 
 html, body {
@@ -35,13 +37,13 @@ p {
 }
 
 main {
-	margin: 0;
-	width: 100%;
+	margin: 0 auto;
+	position: relative;
 	flex-grow: 1;
 	z-index: 1;
 	padding: var(--page-border);
+	width: var(--contain-width);
 	display: grid;
-	width: 100%;
 	height: 100%;
 	overflow: hidden;
 }
@@ -50,9 +52,13 @@ header {
 	position: sticky;
 	top: 0;
 	z-index: 2;
-	width: 100%;
-	padding: var(--page-border);
 	background: var(--background-color);
+}
+
+nav {
+	margin: 0 auto;
+	padding: var(--page-border);
+	width: var(--contain-width);
 }
 
 nav a {
@@ -64,6 +70,8 @@ nav a {
 
 footer {
 	padding: var(--page-border);
+	width: var(--contain-width);
+	margin: 0 auto;
 	font-size: 0.75rem;
 	z-index: 1;
 }
@@ -125,33 +133,24 @@ a[target="_blank"]::after {
 }
 
 @media (max-width: 700px) {
-	header, main, footer {
+	nav, main, footer {
 		padding: 1rem;
 	}
 }
 
-.image {
-	position: fixed;
-	top: 5.5rem;
-	display: flex;
-	align-items: flex-start;
-	justify-content: flex-end;
-	right: 0;
-	margin: 0;
-	padding: 0;
-	width: 600px;
-	height: 100vh;
-	overflow: hidden;
-	max-width: 80%;
-	z-index: -1;
-	background: var(--background-color);
-}
-
-.image-wrap {
+.backing-image {
 	position: absolute;
-	mix-blend-mode: multiply;
-	opacity: .5;
-	object-fit: contain; 
-	max-width: 100%;
-	max-height: 100%;
+	top: 0;
+	right: 0;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	margin: 0 auto;
+	padding: 0;
+	width: 400px;
+	opacity: .2;
+	height: 100%;
+	overflow: hidden;
+	max-width: 50%;
+	z-index: -1;
 }

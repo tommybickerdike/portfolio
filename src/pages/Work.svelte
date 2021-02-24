@@ -1,13 +1,14 @@
 <script>
   import Image from "svelte-image";
-  import { fly } from "svelte/transition";
+  import { fade } from "svelte/transition";
+  export let location;
 </script>
 
 <svelte:head>
   <title>Tommy Bickerdike - Work</title>
 </svelte:head>
 
-<section in:fly={{ y: 50, duration: 500 }} out:fly={{ y: 50, duration: 500 }}>
+<section in:fade={{ duration: 500 }}>
   <div>
     <h2>UX Design</h2>
     <p>Music Glue platform UX design.</p>
@@ -113,16 +114,5 @@
 
   div {
     margin: 2rem 0 4rem;
-  }
-  .image {
-    pointer-events: none;
-	  transform: translate3d(-50%, 0, 1px);
-	  opacity: 0;
-    transition: .5s opacity, .3s transform;
-  }
-
-  a:hover .image {
-    opacity: 1;
-    transform: translate3d(0, 0, 1px);
   }
 </style>

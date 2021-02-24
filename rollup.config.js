@@ -43,7 +43,7 @@ export default {
 			preprocess: {
 				...sveltePreprocess(),
 				...image({
-					publicDir: "./public/",
+					publicDir: "../public/",
 					sizes: [600, 750, 900, 1050, 1200],
   				breakpoints: [600, 750, 900, 1050, 1200],
   				outputDir: "g/",
