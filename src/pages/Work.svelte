@@ -16,7 +16,7 @@
     <a target="_blank" href="https://admin.musicglue.store/">
       Music Glue App
       <BackingImage>
-        <Image src="case-studies/venndr.jpg" alt="Music Glue App" width="600" sizes="(max-width: 600px) 80vw, 600px" threshold="0.8"/>
+        <Image src="images/venndr.jpg" alt="Music Glue App" width="600" sizes="(max-width: 600px) 80vw, 600px" threshold="0.8"/>
       </BackingImage>
       
     </a>
@@ -31,7 +31,7 @@
       <a target="_blank" href="https://www.musicglue.com/">
         View Music Glue Website
         <div class="backing-image">
-          <Image src="case-studies/music-glue.jpg" alt="Music Glue Website" width="600" sizes="(max-width: 600px) 80vw, 600px" threshold="0.8"/>
+          <Image src="images/music-glue.jpg" alt="Music Glue Website" width="600" sizes="(max-width: 600px) 80vw, 600px" threshold="0.8"/>
         </div>
       </a>
     </p>
@@ -43,13 +43,13 @@
       <a target="_blank" href="https://extinctionrebellion.uk/">
         Extinction Rebelion WordPress website development.
         <div class="backing-image">
-          <Image src="case-studies/extinction-rebellion.jpg" alt="Extinction Rebellion Website" width="600" sizes="(max-width: 600px) 80vw, 600px" threshold="0.8"/>
+          <Image src="images/extinction-rebellion.jpg" alt="Extinction Rebellion Website" width="600" sizes="(max-width: 600px) 80vw, 600px" threshold="0.8"/>
         </div>
       </a><br>
       <a target="_blank" href="http://menengage.org/wp-content/uploads/2019/11/Transforming-Masculinities.pdf">
         Men Engage Alliance Annual Report Design & Layout.
         <div class="backing-image">
-          <Image src="case-studies/men-engage.jpg" alt="Men Engage Annual Report" width="600" sizes="(max-width: 600px) 80vw, 600px" threshold="0.8"/>
+          <Image src="images/men-engage.jpg" alt="Men Engage Annual Report" width="600" sizes="(max-width: 600px) 80vw, 600px" threshold="0.8"/>
         </div>
       </a>
     </p>

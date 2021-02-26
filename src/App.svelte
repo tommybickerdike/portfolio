@@ -6,7 +6,7 @@
   export let url = "";
 </script>
 
-<Router url="{url}">
+<Router url={url}>
 	<header>
 		<nav>
 			<Link to="/">Intro</Link>

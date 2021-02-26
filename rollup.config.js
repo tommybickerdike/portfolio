@@ -4,6 +4,7 @@ import resolve from '@rollup/plugin-node-resolve';
 import livereload from 'rollup-plugin-livereload';
 import { terser } from 'rollup-plugin-terser';
 import sveltePreprocess from 'svelte-preprocess';
+import copy from 'rollup-plugin-copy'
 import css from 'rollup-plugin-css-only';
 import image from "svelte-image";
 
@@ -66,6 +67,9 @@ export default {
 				dev: !production
 			}
 		}),
+		copy({
+      targets: [{ src: 'public/g', dest: 'public/case-studies' }],
+    }),
 		// we'll extract any component CSS out into
 		// a separate file - better for performance
 		css({ output: 'bundle.css' }),
