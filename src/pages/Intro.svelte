@@ -1,46 +1,43 @@
-<script lang="ts">
-	import Image from "svelte-image";
-	import { fly, fade } from "svelte/transition";
-</script>
-
 <svelte:head>
-  <title>Tommy Bickerdike - Intro</title>
+  <title>Tommy Bickerdike</title>
 </svelte:head>
 
-<section in:fly={{ y: 50, duration: 500 }} out:fly={{ y: 50, duration: 300 }}>
+<script>
+	import Image from "svelte-image";
+	import BackingImage from '../components/BackingImage.svelte';
+	import { fly } from "svelte/transition";
+</script>
+
+<section in:fly={{ y: 50, duration: 600 }} out:fly={{ y: 50, duration: 300 }}>
 	<h1>Tommy Bickerdike</h1>
-	<p>A senior UX designer and front end developer<br> 
-		currently working in e-commerece at Music Glue.</p>
+	<p>A senior UX designer and front end developer currently working in e-commerece at Music Glue.</p>
 </section>
-<div class="backing-image" in:fade={{ duration: 2000 }} out:fly={{ x: 100, duration: 300 }}>
-	<Image src="images/tommy-bickerdike.jpg" alt="Tommy Bickerdike" width="600" sizes="(max-width: 600px) 80vw, 500px" threshold="0.8"/>
-</div>
+<BackingImage>
+	<Image src="tommy-bickerdike.jpg" alt="Tommy Bickerdike" width="600" sizes="(max-width: 600px) 80vw, 500px" threshold="0.8"/>
+</BackingImage>
 
 <style>
 	h1 {
 		font-weight: inherit;
 		position: relative;
 		display: block;
-		font-size: 6rem;
-		padding-top: 10vh;
+		font-size: 5.5rem;
+		padding-top: 12vh;
 		line-height: 1.1;
 		font-weight: 700;
+		max-width: 66vw;
 		margin: 0 0 1rem;
 	}
 
 	p {
 		font-size: 1.5rem;
-		width: 50ch;
+		width: 40ch;
 		max-width: 100%;
 	}
 
 	@media (max-width: 700px) {
 		h1 {
-			font-size: 4rem;
-		}
-
-		.backing-image {
-			align-items: flex-end;
+			font-size: 3.5rem;
 		}
 	}
 </style>

@@ -15,8 +15,8 @@
 	</header>
 	<main>
 		<Route path=""><Intro /></Route>
-		<Route path="/work" component="{Work}" />
-		<Route path="/case-studies/*" component="{Cases}" />
+		<Route path="work" component="{Work}" />
+		<Route path="case-studies/*" component="{Cases}" />
 	</main>
 	<footer>
 		Built by Tommy using Svelte <a href="https://github.com/tommybickerdike/portfolio" target="_blank" rel="noopener">view source</a>.

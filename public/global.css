@@ -154,3 +154,25 @@ a[target="_blank"]::after {
 	max-width: 50%;
 	z-index: -1;
 }
+
+.backing-image .wrapper {
+	object-fit: contain;
+	height: 100%;
+}
+
+a .backing-image {
+	position: fixed;
+	width: 100%;
+	align-items: flex-start;
+	opacity: 0;
+	transform: translateX(-50%) scale(.75);
+	pointer-events: none;
+	transition: 500ms opacity, 300ms transform;
+}
+
+@media (hover: hover) {
+	a:hover .backing-image {
+		opacity: .3;
+		transform: translateX(0%) scale(.75);
+	}
+}
