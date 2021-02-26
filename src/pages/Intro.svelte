@@ -13,7 +13,7 @@
 	<p>A senior UX designer and front end developer currently working in e-commerece at Music Glue.</p>
 </section>
 <BackingImage>
-	<Image src="tommy-bickerdike.jpg" alt="Tommy Bickerdike" width="600" sizes="(max-width: 600px) 80vw, 500px" threshold="0.8"/>
+	<Image src="images/tommy-bickerdike.jpg" alt="Tommy Bickerdike" width="600" sizes="(max-width: 600px) 80vw, 500px" threshold="0.8"/>
 </BackingImage>
 
 <style>

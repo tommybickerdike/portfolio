@@ -1,11 +1,10 @@
 <script>
   import Image from "svelte-image";
   import { Router, Link, Route } from "svelte-routing";
-  import BackingImage from '../components/BackingImage.svelte';
-  export let url = "";
+  let url = "";
 </script>
 
-<Router basepath="/case-studies" url="{url}">
+<Router url="{url}">
   <Route path="ecommerce-sites">
     <section>
       <h1>Music Ecommerce Websites</h1>
@@ -13,9 +12,9 @@
       <p>
         <a target="_blank" href="https://www.musicglue.com/ac-dc/">
           AC/DC
-          <BackingImage>
+          <div class="backing-image">
             <Image src="ac-dc.jpg" alt="AC/DC Website" width="600" sizes="(max-width: 600px) 80vw, 600px" threshold="0.8"/>
-          </BackingImage>
+          </div>
         </a><br>
         <a target="_blank" href="https://www.entershikari.com">
           Enter Shikari

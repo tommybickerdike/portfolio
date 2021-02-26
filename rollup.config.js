@@ -46,7 +46,6 @@ export default {
 					publicDir: "public",
 					sizes: [600, 750, 900, 1050, 1200],
   				breakpoints: [600, 750, 900, 1050, 1200],
-  				outputDir: "g",
 					compressionLevel: 5,
 					quality: 50,
 					webpOptions: {
