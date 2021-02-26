@@ -7,7 +7,7 @@
 	import { fly, fade } from "svelte/transition";
 </script>
 
-<section in:fly={{ x: -300, duration: 600 }} out:fade={{ duration: 300 }}>
+<section in:fly={{ x: -300, duration: 1000 }} out:fade={{ duration: 300 }}>
 	<h1>Tommy Bickerdike</h1>
 	<p>A senior UX designer and front end developer currently working in e-commerece at Music Glue.</p>
 </section>
