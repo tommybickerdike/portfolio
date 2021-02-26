@@ -4,17 +4,16 @@
 
 <script>
 	import Image from "svelte-image";
-	import BackingImage from '../components/BackingImage.svelte';
-	import { fly } from "svelte/transition";
+	import { fly, fade } from "svelte/transition";
 </script>
 
-<section in:fly={{ y: 50, duration: 600 }} out:fly={{ y: 50, duration: 300 }}>
+<section in:fly={{ x: -300, duration: 600 }} out:fade={{ duration: 300 }}>
 	<h1>Tommy Bickerdike</h1>
 	<p>A senior UX designer and front end developer currently working in e-commerece at Music Glue.</p>
 </section>
-<BackingImage>
+<div class="backing-image" in:fade={{ duration: 1000 }} out:fly={{ x: 200, duration: 500 }}>
 	<Image src="images/tommy-bickerdike.jpg" alt="Tommy Bickerdike" width="600" sizes="(max-width: 600px) 80vw, 500px" threshold="0.8"/>
-</BackingImage>
+</div>
 
 <style>
 	h1 {

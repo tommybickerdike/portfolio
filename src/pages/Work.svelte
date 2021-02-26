@@ -6,19 +6,17 @@
   import Image from "svelte-image";
   import { fade } from "svelte/transition";
   import { Link } from "svelte-routing";
-  import BackingImage from '../components/BackingImage.svelte';
 </script>
 
-<section in:fade={{ duration: 500 }}>
+<section in:fade={{ duration: 600 }}>
   <div>
     <h2>UX Design</h2>
     <p>Music Glue platform UX design.</p>
     <a target="_blank" href="https://admin.musicglue.store/">
       Music Glue App
-      <BackingImage>
+      <div class="backing-image">
         <Image src="images/venndr.jpg" alt="Music Glue App" width="600" sizes="(max-width: 600px) 80vw, 600px" threshold="0.8"/>
-      </BackingImage>
-      
+      </div>
     </a>
   </div>
   <div>

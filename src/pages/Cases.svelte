@@ -1,7 +1,6 @@
 <script>
   import Image from "svelte-image";
   import { Router, Link, Route } from "svelte-routing";
-  import BackingImage from '../components/BackingImage.svelte';
   export let url = "";
   export let basepath = "/";
 </script>
@@ -14,40 +13,40 @@
       <p>
         <a target="_blank" href="https://www.musicglue.com/ac-dc/">
           AC/DC
-          <BackingImage>
+          <div class="backing-image">
             <Image src="/images/ac-dc.jpg" alt="AC/DC Website" width="600" sizes="(max-width: 600px) 80vw, 600px" threshold="0.8"/>
-          </BackingImage>
+          </div>
           
         </a><br>
         <a target="_blank" href="https://www.entershikari.com">
           Enter Shikari
-          <BackingImage>
+          <div class="backing-image">
             <Image src="/images/enter-shikari.jpg" alt="Enter Shikari Website" width="600" sizes="(max-width: 600px) 80vw, 600px" threshold="0.8"/>
-          </BackingImage>
+          </div>
         </a><br>
         <a target="_blank" href="https://merch.georgeezra.com">
           George Ezra
-          <BackingImage>
+          <div class="backing-image">
             <Image src="/images/george-ezra.jpg" alt="George Ezra Website" width="600" sizes="(max-width: 600px) 80vw, 600px" threshold="0.8"/>
-          </BackingImage>
+          </div>
         </a><br>
         <a target="_blank" href="https://www.jacksavoretti.com">
           Jack Savoretti
-          <BackingImage>
+          <div class="backing-image">
             <Image src="/images/jack-savoretti.jpg" alt="Jack Savoretti Website" width="600" sizes="(max-width: 600px) 80vw, 600px" threshold="0.8"/>
-          </BackingImage>
+          </div>
         </a><br>
         <a target="_blank" href="https://store.ledzeppelin.com">
           Led Zeppelin
-          <BackingImage>
+          <div class="backing-image">
             <Image src="/images/led-zeppelin.jpg" alt="Led Zeppelin Website" width="600" sizes="(max-width: 600px) 80vw, 600px" threshold="0.8"/>
-          </BackingImage>
+          </div>
         </a><br>
         <a target="_blank" href="https://www.motorhead79.com">
           Motörhead
-          <BackingImage>
+          <div class="backing-image">
             <Image src="/images/motorhead.jpg" alt="Motörhead Website" width="600" sizes="(max-width: 600px) 80vw, 600px" threshold="0.8"/>
-          </BackingImage>
+          </div>
         </a>
       </p>
     </section>
