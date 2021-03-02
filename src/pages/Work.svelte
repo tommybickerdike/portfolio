@@ -5,53 +5,33 @@
 <script>
   import Image from "svelte-image";
   import { fade } from "svelte/transition";
-  import { Link } from "svelte-routing";
+  import { link } from "svelte-routing";
 </script>
 
 <section in:fade={{ duration: 600 }}>
-  <div>
-    <h2>UX Design</h2>
-    <p>Music Glue platform UX design.</p>
-    <a target="_blank" href="https://admin.musicglue.store/">
-      Music Glue App
+  <dl>
+    <a use:link href="/case-studies/ecommerce-sites">
+      <dt class="title">Platform UI Design</dt>
+      <dd>UI design and development for Music Glue.</dd>
       <div class="backing-image">
-        <Image src="images/venndr.jpg" alt="Music Glue App" width="600" sizes="(max-width: 600px) 80vw, 600px" threshold="0.8"/>
+        <Image src="/images/venndr.jpg" width="600" sizes="(max-width: 600px) 80vw, 600px" threshold="0.8"/>
       </div>
     </a>
-  </div>
-  <div>
-    <Link to="/case-studies/ecommerce-sites">Music Ecommerce Websites</Link>
-  </div>
-  <div>
-    <h2>Branding</h2>
-    <p>Brand logo, supporting styles and website UI. Developed in 2019.</p>
-    <p>
-      <a target="_blank" href="https://www.musicglue.com/">
-        View Music Glue Website
-        <div class="backing-image">
-          <Image src="images/music-glue.jpg" alt="Music Glue Website" width="600" sizes="(max-width: 600px) 80vw, 600px" threshold="0.8"/>
-        </div>
-      </a>
-    </p>
-  </div>
-  <div>
-    <h2>Advocacy</h2>
-    <p>Design work for advocacy and social causes.</p>
-    <p>
-      <a target="_blank" href="https://extinctionrebellion.uk/">
-        Extinction Rebelion WordPress website development.
-        <div class="backing-image">
-          <Image src="images/extinction-rebellion.jpg" alt="Extinction Rebellion Website" width="600" sizes="(max-width: 600px) 80vw, 600px" threshold="0.8"/>
-        </div>
-      </a><br>
-      <a target="_blank" href="http://menengage.org/wp-content/uploads/2019/11/Transforming-Masculinities.pdf">
-        Men Engage Alliance Annual Report Design & Layout.
-        <div class="backing-image">
-          <Image src="images/men-engage.jpg" alt="Men Engage Annual Report" width="600" sizes="(max-width: 600px) 80vw, 600px" threshold="0.8"/>
-        </div>
-      </a>
-    </p>
-  </div>
+    <a use:link href="/case-studies/ecommerce-sites">
+      <dt class="title">Branding</dt>
+      <dd>Brand logo, supporting styles and website UI. Developed in 2019.</dd>
+      <div class="backing-image">
+        <Image src="/images/music-glue.jpg" width="600" sizes="(max-width: 600px) 80vw, 600px" threshold="0.8"/>
+      </div>
+    </a>
+    <a use:link href="/case-studies/ecommerce-sites">
+      <dt class="title">Ecommerce Website Development</dt>
+      <dd>A wide range of bespoke e-commerce websites developed for music industry clients.</dd>
+      <div class="backing-image">
+        <Image src="/images/george-ezra.jpg" width="600" sizes="(max-width: 600px) 80vw, 600px" threshold="0.8"/>
+      </div>
+    </a>
+  </dl>
 </section>
 
 
@@ -59,24 +39,20 @@
   section {
     z-index: 2;
   }
-  h2 {
-    font-size: 2rem;
+  dt {
+    font-size: 1.5rem;
     margin: 0 0 1rem;
     padding: 0;
+    display: block;
   }
-  p {
-    font-size: 1.5rem;
+  dd {
+    display: block;
+    margin: 0;
+    font-weight: normal;
   }
 
   a {
-    font-weight: bold;
-    font-size: 1.25rem;
-    overflow: visible;
-    position: relative;
+    display: block;
+    margin-bottom: 3rem;
   }
-
-  div {
-    margin: 2rem 0 4rem;
-  }
-
 </style>
