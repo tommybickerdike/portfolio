@@ -72,7 +72,7 @@ footer {
 	padding: var(--page-border);
 	width: var(--contain-width);
 	margin: 0 auto;
-	font-size: 0.5rem;
+	font-size: 0.8rem;
 	z-index: 1;
 }
 
