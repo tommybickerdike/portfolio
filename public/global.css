@@ -1,5 +1,7 @@
 :root {
-	--background-color: #f4f4f4;
+	--background-color: #f6f6f6;
+	--border-color: rgba(100,100,100,.2);
+	--card-color: #ffffff;
 	--primary-color: #252b57;
 	--link-color: #ff572270;
 	--page-border: 2rem;
@@ -17,7 +19,7 @@ html, body {
 }
 
 body {
-	font-family: transat, sans-serif;
+	font-family: sans-serif;
 	font-weight: 400;
 	font-style: normal;
 	color: var(--primary-color);
@@ -30,6 +32,20 @@ body {
 	grid-template-columns: 100%;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+  width: .25rem;
+}
+
+::-webkit-scrollbar-track {
+	background-color: var(--background-color);
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: rgba(100,100,100,.4);
+  border-radius: .25rem;
 }
 
 p {
