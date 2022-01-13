@@ -9,8 +9,7 @@
 
 <section in:fly={{ y: 50, duration: 500 }} out:fly={{ y: 50, duration: 300 }}>
 	<h1>Tommy Bickerdike</h1>
-	<p>A product designer and creative technologist currently 
-		making e-commerce websites as Creative Director of Music Glue.</p>
+	<p>A product designer and creative technologist currently building dreams at Music Glue.</p>
 </section>
 <div class="image" in:fade={{ duration: 2000 }} out:fly={{ x: 100, duration: 300 }}>
 	<Image wrapperClass="image-wrap" src="images/tommy-bickerdike.jpg" alt="Tommy Bickerdike" width="600" sizes="(max-width: 600px) 80vw, 500px" threshold="0.8"/>
