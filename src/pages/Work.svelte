@@ -72,24 +72,6 @@
       </a>
     </p>
   </div>
-  <div>
-    <h2>Advocacy</h2>
-    <p>Design work for advocacy and social causes.</p>
-    <p>
-      <a target="_blank" href="https://extinctionrebellion.uk/">
-        Extinction Rebelion WordPress website development.
-        <div class="image">
-          <Image wrapperClass="image-wrap" src="images/extinction-rebellion.jpg" alt="Extinction Rebellion Website" width="600" sizes="(max-width: 600px) 80vw, 600px" threshold="0.8"/>
-        </div>
-      </a><br>
-      <a target="_blank" href="http://menengage.org/wp-content/uploads/2019/11/Transforming-Masculinities.pdf">
-        Men Engage Alliance Annual Report Design & Layout.
-        <div class="image">
-          <Image wrapperClass="image-wrap" src="images/men-engage.jpg" alt="Men Engage Annual Report" width="600" sizes="(max-width: 600px) 80vw, 600px" threshold="0.8"/>
-        </div>
-      </a>
-    </p>
-  </div>
 </section>
 
 
